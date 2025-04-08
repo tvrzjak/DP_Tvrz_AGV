@@ -1,0 +1,31 @@
+load_detection:
+  ros_parameters:
+    # Costmap filtering
+    opacity_threshold: 99
+    # Detected objects size (legs from pallet)
+    max_width: 15.0
+    max_height: 15.0
+    min_width: 3.0
+    min_height: 3.0
+    # Distance from pallet for comming near
+    distance_from_pallet: 0.6
+    distance_from_pallet2: 0.8
+    # Pallet size
+    shorter_side: 0.39
+    longer_side: 0.52
+    tolerance: 0.05
+    # shorter_side: 0.75
+    # longer_side: 0.85
+    # tolerance: 0.1
+    # nav2 params docking
+    robot_radius: 0.2
+    global_inflation_radius: 0.3
+    local_inflation_radius: 0.3
+    footprint: "[[0.1, 0.1], [0.1, -0.1], [-0.1, -0.1], [-0.1, 0.1]]"
+    collision_monitor: False
+    # nav2 params normal
+    robot_radius2: 0.25
+    global_inflation_radius2: 0.4
+    local_inflation_radius2: 0.5
+    footprint2: "[[0.2, 0.2], [0.2, -0.2], [-0.2, -0.2], [-0.2, 0.2]]"
+    collision_monitor2: True

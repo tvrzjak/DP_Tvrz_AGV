@@ -1,0 +1,11 @@
+services:
+  leuze_pallet:
+    build: .
+    restart: always
+    container_name: leuze_agv_pallet_handling
+    networks:
+      - leuze_agv_ros
+
+networks:
+  leuze_agv_ros:
+    external: true
