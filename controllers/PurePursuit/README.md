@@ -1,7 +1,3 @@
-Zde je kompletní `README.md` v Markdownu, specificky zaměřený na tvůj nový kód s Pure Pursuit algoritmem jako ROS 2 uzel. Obsahuje všechny požadavky, které jsi uvedl – popis algoritmu, jeho reálné použití, možnost zastavování/spouštění jízdy, posílání trasy z aplikace a zmínku o jednodušší simulaci.
-
----
-
 # Pure Pursuit Controller (ROS 2 Node)
 
 ## Overview
