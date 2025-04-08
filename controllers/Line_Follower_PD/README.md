@@ -27,7 +27,7 @@ This package relies on data from two separate sensor drivers:
 Both drivers must be installed and operational in your ROS 2 workspace for this controller to function correctly. See their respective repositories for installation instructions.
 
 ## Installation
-1. Clone this repository into your ROS 2 workspace `src` directory:
+1. Clone this repository (or only this folder) into your ROS 2 workspace `src` directory:
    ```bash
    cd ~/ros2_ws/src
-   git clone <repository_url>
+   git clone https://github.com/tvrzjak/DP_Tvrz_AGV.git
