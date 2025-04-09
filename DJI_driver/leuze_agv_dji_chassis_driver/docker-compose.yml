@@ -1,0 +1,11 @@
+services:
+  leuze_agv_dji_chassis_driver:
+    build: .
+    restart: always
+    network_mode: host
+    #networks:
+     # - leuze_agv_ros
+
+networks:
+  leuze_agv_ros:
+    external: true
