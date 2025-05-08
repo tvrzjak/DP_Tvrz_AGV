@@ -1,0 +1,58 @@
+/ros2_laser_scan_merger:
+  ros__parameters:
+    laser1Alpha: 315.0
+    laser1AngleMax: 135.0
+    laser1AngleMin: -135.0
+    laser1B: 0
+    laser1G: 0
+    laser1R: 255
+    laser1XOff: 0.56
+    laser1YOff: -0.42
+    laser1ZOff: 0.27		#teoreticky je 0.1213 nad zemi
+    laser2Alpha: 135.0
+    laser2AngleMax: 135.0
+    laser2AngleMin: -135.0
+    laser2B: 255
+    laser2G: 0
+    laser2R: 0
+    laser2XOff: -0.56
+    laser2YOff: 0.42
+    laser2ZOff: 0.27
+    pointCloudTopic: cloud_in
+    pointCloutFrameId: lidar_link
+    qos_overrides:
+      /parameter_events:
+        publisher:
+          depth: 1000
+          durability: volatile
+          history: keep_last
+          reliability: reliable
+    scanTopic1: scan1
+    scanTopic2: scan2
+    show1: true
+    show2: true
+    use_sim_time: True
+
+/pointcloud_to_laserscan:
+  ros__parameters:
+    angle_increment: 0.0087
+    angle_max: 3.1416
+    angle_min: -3.1416
+    inf_epsilon: 1.0
+    max_height: 1.0
+    min_height: 0.0
+    qos_overrides:
+      /parameter_events:
+        publisher:
+          depth: 1000
+          durability: volatile
+          history: keep_last
+          reliability: reliable
+    queue_size: 1000
+    scan_time: 0.025
+    range_max: 25.0
+    range_min: 0.001
+    target_frame: lidar_link
+    transform_tolerance: 0.01
+    use_inf: true
+    use_sim_time: True

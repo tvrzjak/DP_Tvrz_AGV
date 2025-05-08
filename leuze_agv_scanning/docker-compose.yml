@@ -1,0 +1,18 @@
+services:
+  leuze_scanning:
+    build: .
+    restart: always
+    environment:
+      SCANNING_IP_1: "192.168.20.5"
+      SCANNING_IP_2: "192.168.20.7"
+      SCANNING_PORT_1: "9991"
+      SCANNING_PORT_2: "9992"
+    ports:
+      - "9991:9991/udp"
+      - "9992:9992/udp"
+    networks:
+      - leuze_agv_ros
+
+networks:
+  leuze_agv_ros:
+    external: true
