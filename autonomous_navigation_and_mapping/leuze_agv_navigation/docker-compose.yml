@@ -1,0 +1,12 @@
+services:
+  leuze_agv_navigation:
+    build: .
+    container_name: leuze_agv_navigation
+    networks:
+      - leuze_agv_ros
+    volumes:
+      - ./ros2_ws:/ros2_ws
+
+networks:
+  leuze_agv_ros:
+    external: true
