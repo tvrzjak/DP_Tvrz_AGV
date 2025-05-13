@@ -1,0 +1,17 @@
+{
+    "ros.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/lepuser/diff_ws/install/plc_driver/lib/python3.10/site-packages",
+        "/home/lepuser/diff_ws/install/Leuze_diff_AGV_description/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/lepuser/diff_ws/install/plc_driver/lib/python3.10/site-packages",
+        "/home/lepuser/diff_ws/install/Leuze_diff_AGV_description/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
